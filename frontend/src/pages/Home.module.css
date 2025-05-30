@@ -1,0 +1,15 @@
+.homeContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 60px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .homeContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
