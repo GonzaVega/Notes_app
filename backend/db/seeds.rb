@@ -12,9 +12,9 @@ if user.new_record?
   user.password = 'password123'
   user.password_confirmation = 'password123'
   user.save!
-  puts "User test@ensolvers.com created."
+  puts "integrador@AYSO.com created."
 else
-  puts "User test@ensolvers.com already exists."
+  puts "User integrador@AYSO.com already exists."
 end
 
 [
