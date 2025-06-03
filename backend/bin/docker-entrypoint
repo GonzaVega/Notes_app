@@ -7,7 +7,8 @@ until pg_isready -h db -U postgres; do
   sleep 1
 done
 
-# Ejecuta migraciones si es necesario
-bundle exec rails db:migrate 2>/dev/null || bundle exec rails db:setup
+# Ejecuta migraciones 
+bundle exec rails db:migrate
+bundle exec rails db:seed
 
 exec "$@"
