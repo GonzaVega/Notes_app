@@ -18,20 +18,6 @@ El sistema completo incluye:
 
 ---
 
-## 📁 Estructura del proyecto
-
-📦 app-notas-docker
-├── backend/ # Backend Rails API
-│ ├── Dockerfile
-│ └── ...
-├── frontend/ # Frontend React
-│ ├── Dockerfile
-│ └── ...
-├── docker-compose.yml # Orquestador de contenedores
-└── README.md 
-
----
-
 ## ⚙️ Requisitos
 
 - [Docker](https://www.docker.com/)
