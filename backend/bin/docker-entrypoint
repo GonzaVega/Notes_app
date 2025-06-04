@@ -1,8 +1,14 @@
-#!/bin/bash -e
+#!/bin/bash
+set -e
 
-# If running the rails server then create or migrate existing database
-if [ "${1}" == "./bin/rails" ] && [ "${2}" == "server" ]; then
-  ./bin/rails db:prepare
-fi
+# Espera a que Postgres esté listo
+until pg_isready -h db -U postgres; do
+  echo "Esperando a PostgreSQL..."
+  sleep 1
+done
 
-exec "${@}"
+# Ejecuta migraciones 
+bundle exec rails db:migrate
+bundle exec rails db:seed
+
+exec "$@"
