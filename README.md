@@ -16,14 +16,15 @@ El sistema completo incluye:
 ✔️ No se requiere instalar Node, Rails ni PostgreSQL  
 ✔️ Listo para levantar con un solo comando
 
----
+## ▶️ ¿Donde puedo ver el video explicativo?
+
+En este link de YouTube: https://youtu.be/3oCidM88knA 
 
 ## ⚙️ Requisitos
 
 - [Docker](https://www.docker.com/)
 - [Docker Compose](https://docs.docker.com/compose/)
 
----
 
 ## 🛠️ Instalación y ejecución
 

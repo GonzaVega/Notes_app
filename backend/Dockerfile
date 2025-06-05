@@ -46,7 +46,6 @@ RUN apt-get update -qq && \
 COPY --from=build /usr/local/bundle /usr/local/bundle
 COPY --from=build /rails /rails
 
-# 🔧 Agregamos permiso de ejecución para bin/rails
 RUN chmod +x /rails/bin/rails
 
 # Run and own only the runtime files as a non-root user for security
@@ -57,6 +56,6 @@ USER rails:rails
 # Entrypoint prepares the database.
 ENTRYPOINT ["/rails/bin/docker-entrypoint"]
 
-# Start the server by default, this can be overwritten at runtime
+# Se configura explicitamente el inicio de la app en el puerto 4000
 EXPOSE 4000
 CMD ["./bin/rails", "server", "-b", "0.0.0.0", "-p", "4000"]
