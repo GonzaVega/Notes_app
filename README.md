@@ -1,4 +1,4 @@
-# 🗒️ App de Notas - Proyecto Virtualizado con Docker
+# 🗒️ App de Notas - Proyecto Virtualizado con Docker 🗒️
 
 Este es un entorno de desarrollo virtualizado que encapsula una aplicación web de notas utilizando **Docker** y **Docker Compose**.
 
@@ -18,7 +18,7 @@ El sistema completo incluye:
 
 ## ▶️ ¿Donde puedo ver el video explicativo?
 
-En este link de YouTube: https://youtu.be/3oCidM88knA 
+- [En YouTube](https://youtu.be/3oCidM88knA)
 
 ## ⚙️ Requisitos
 
@@ -31,7 +31,9 @@ En este link de YouTube: https://youtu.be/3oCidM88knA
 Cloná el repositorio y levantá los contenedores:
 
 git clone https://github.com/GonzaVega/Notes_app.git
+
 cd notes_app
+
 docker compose up --build
 
 Desde tu navegador de internet:
@@ -39,4 +41,5 @@ Desde tu navegador de internet:
 http://localhost:3000
 
 Usuario de test: integrador@AYSO.com
-contraseña de prueba: password123
+
+Contraseña de prueba: password123
