@@ -18,13 +18,12 @@ El sistema completo incluye:
 
 ## ▶️ ¿Donde puedo ver el video explicativo?
 
-En este link de YouTube: 
+En este link de YouTube: https://youtu.be/3oCidM88knA 
 
 ## ⚙️ Requisitos
 
 - [Docker](https://www.docker.com/)
 - [Docker Compose](https://docs.docker.com/compose/)
-
 
 
 ## 🛠️ Instalación y ejecución
